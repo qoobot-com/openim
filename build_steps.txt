@@ -1,0 +1,27 @@
+Flutter 项目构建步骤：
+
+1. 清理项目缓存：
+   flutter clean
+
+2. 删除 Gradle 缓存目录：
+   删除以下目录（如果存在）：
+   - .gradle
+   - android\.gradle
+   - build
+   - android\build
+   - android\app\build
+
+3. 获取依赖：
+   flutter pub get
+
+4. 构建 APK：
+   flutter build apk --debug
+
+注意：AndroidX 配置已添加到 android\gradle.properties 文件中：
+- android.useAndroidX=true
+- android.enableJetifier=true
+
+如果仍然遇到问题，请检查：
+1. 网络连接是否正常
+2. 是否需要使用 VPN
+3. Java 环境配置是否正确
